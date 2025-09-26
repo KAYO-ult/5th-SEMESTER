@@ -1,2 +1,1 @@
-utopct='%.2f%%', startangle=90)
-plt.title('Pie Chart')
+ax2.scatter(df['c'], c='purple')
