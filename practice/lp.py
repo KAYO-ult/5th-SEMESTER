@@ -12,3 +12,5 @@ plt.xlabel('Year')
 plt.ylabel('Weight (kg)')
 
 plt.show()  
+
+
