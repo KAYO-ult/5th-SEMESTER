@@ -1,1 +1,2 @@
-ax2.scatter(df['c'], c='purple')
+plt.bar(months, face_cream_sales, label='Face Cream')
+# plt.bar(months, face_wash_sales, label='Face Wash')
