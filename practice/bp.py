@@ -18,21 +18,22 @@ import matplotlib.pyplot as plt
 
 # Create a DataFrame
 data = {
-    'x': ['C', 'C++', 'Java', 'Python', 'C#', 'Bash'],
-    'y': [23, 17, 35, 29, 12, 41]
+    'programs': ['C', 'C++', 'Java', 'Python', 'C#', 'Bash'],
+    'popularity': [23, 17, 35, 29, 12, 41],
+    'meta': [55, 73, 94, 100, 20, 60]
 }
 
 df = pd.DataFrame(data)
 
 # Plot using DataFrame
 df.plot(
-    x='x',
-    y='y',
-    kind='bar',
-    color='purple',
-    width=0.4,
-    edgecolor='black',
-    legend=False
+    x='programs',
+    y= ['popularity', 'meta'],
+    kind='scatter',
+    # color=['purple', 'orange'],
+    # width=0.4,
+    # edgecolor='black',
+    legend=True
 )
 
 # Add labels and title
@@ -42,4 +43,4 @@ plt.ylabel('Popularity')
 
 # Display the plot
 plt.show()
- 
+  
