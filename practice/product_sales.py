@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import random as rnd
+import numpy as np
 
 products = ['Face Cream', 'Face Wash', 'Toothpaste', 'Shampoo', 'Conditioner', 'Deodorant']
 months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -12,12 +12,24 @@ months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 # Conditioner_sales = [1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900]
 # Deodorant_sales = [1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300]
 
-Face_Cream_sales = [rnd.randint(2000,5000) for _ in range(12)]
-Face_Wash_sales = [rnd.randint(1000,3000) for _ in range(12)]
-Toothpaste_sales = [rnd.randint(3000,6000) for _ in range(12)]
-Shampoo_sales = [rnd.randint(1500,4500) for _ in range(12)]
-Conditioner_sales = [rnd.randint(1000,3500) for _ in range(12)]
-Deodorant_sales = [rnd.randint(800,2500) for _ in range(12)]   
+# Face_Cream_sales = [rnd.randint(2000,5000) for _ in range(12)]
+# Face_Wash_sales = [rnd.randint(1000,3000) for _ in range(12)]
+# Toothpaste_sales = [rnd.randint(3000,6000) for _ in range(12)]
+# Shampoo_sales = [rnd.randint(1500,4500) for _ in range(12)]
+# Conditioner_sales = [rnd.randint(1000,3500) for _ in range(12)]
+# Deodorant_sales = [rnd.randint(800,2500) for _ in range(12)]  
+
+Face_Cream_sales = np.random.randint(2000,50000,12)
+Face_Wash_sales = np.random.randint(1000,30000,12)
+Toothpaste_sales = np.random.randint(3000,60000,12) 
+Shampoo_sales = np.random.randint(1500,45000,12)
+Conditioner_sales = np.random.randint(1000,35000,12)
+Deodorant_sales = np.random.randint(800,25000,12)
+
+
+
+
+
 
 
 
