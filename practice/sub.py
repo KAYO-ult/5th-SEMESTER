@@ -100,15 +100,24 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-data={
+# data={
+#     'months': [1,2,3,4,5,6,7,8,9,10,11,12],
+#     'anudeep': np.random.randint(2000,50000,12),
+#     'aneek': np.random.randint(1000,30000,12),
+#     'souporno':  np.random.randint(3000,60000,12),
+#     'arya': np.random.randint(1500,45000,12)    
+# }
+
+df = pd.DataFrame(data={
     'months': [1,2,3,4,5,6,7,8,9,10,11,12],
     'anudeep': np.random.randint(2000,50000,12),
     'aneek': np.random.randint(1000,30000,12),
     'souporno':  np.random.randint(3000,60000,12),
     'arya': np.random.randint(1500,45000,12)    
-}
+})
 
-df = pd.DataFrame(data)
+fig, ax = plt.subplots(2, 2)
+fig.suptitle('Body Count')
 
 plt.subplot(2, 2, 1)
 df.plot(x='months', y='anudeep', kind='line', marker='o', color='blue', label='Anudeep', ax=plt.gca())
