@@ -17,22 +17,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Create a DataFrame
-data = {
+df = pd.DataFrame(data = {
     'programs': ['C', 'C++', 'Java', 'Python', 'C#', 'Bash'],
     'popularity': [23, 17, 35, 29, 12, 41],
     'meta': [55, 73, 94, 100, 20, 60]
-}
-
-df = pd.DataFrame(data)
+})
 
 # Plot using DataFrame
 df.plot(
     x='programs',
     y= ['popularity', 'meta'],
-    kind='scatter',
+    kind='bar',
     # color=['purple', 'orange'],
-    # width=0.4,
-    # edgecolor='black',
+    width=0.4,
+    edgecolor='white',
     legend=True
 )
 
